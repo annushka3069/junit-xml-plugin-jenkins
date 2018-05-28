@@ -1,0 +1,31 @@
+Jenkins definit des points d'extension qui sont des interfaces ou classes abtraites modelisant un aspect d'un systeme de build (compilation). Ces interfaces definissent les 
+fonctions a implementer et Jenkins permet aux plugins de contribuer a cette implementation.
+
+Pour developper un plugin, on a besoin de Maven 3.3 ou plus et de JDK version 7.0 ou plus. Il faudra s'assurer que Maven a la possibilite de telecharger des choses depuis 
+Internet. 
+
+Note
+On a besoin de Maven pour les plugins Jenkins car le processus de build de Jenkins implique un certain lot de pre-traitement de code source. Si on le fait avec Ant, le script 
+de build va etre un peu plus complique.
+Le packaging du fichier .hpi du plugin implique un certain nombre de conventions telles que le listing des autres dependances de plugin. Le faire manuellement encouragerait 
+les erreurs et encore une fois le script de build sera plus complique.
+Le faire comme plugin mavem permet d'atteindre l'objectif "hpi:run" goal. C'est une etape critique pour avoir une experience de edit/build/debug plus rapide. Sans Maven, ce
+ne serait pas du tout trivial.
+Une interessante possibilite serait de laisser un langage de scripting definir le plugin afin que les choses puissent se faire de facon plus simple.
+
+Utiliser Eclipse Juno (4.2) ou plus pour une meilleure performance.
+Les versions d'Eclipse entre 4.5 et 4.6.2 contiennent un bug qui cause des erreurs comme "Only a type can be imported. hudson.model.Job resolves to a package".
+Il vaut mieux dans ce cas migrer vers Eclipse Neon.2 (4.6.2) ou plus (Bug 495598).
+Comme les plugins Jenkins sont des projets Maven, Eclipse offre deux options pour charger un projet de plugins Jenkins. L'une est d'utiliser m2e qui essaie de faire comprendre 
+"nativement" Maven a Eclipse et l'autre est d'utiliser le plugin Eclipse de Maven qui fait que maven genere des projets type Eclipse. Pour l'heure, a moins d'avoir une 
+experience anterieure avec m2e, il est recommande d'utiliser le plugin Maven Eclipse.
+Pour generer des fichiers de projet de type Eclipse, on peut executer la commande suivante(le parametre outputDirectory est utilise pour combler le manque de processeur 
+d'annotation JSR-269 dans Eclipse :)
+$mvn -DdownloadSources=true -DdownloadJavadocs=true -DoutputDirectory=target/eclipse-classes -Declipse.workspace=/path/to/workspace eclipse:eclipse eclipse:configure-workspace
+Remplacer /path/to/workspace par notre chemin vers notre workspace Eclipse
+
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=AppTest -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=58080,suspend=n
+
