@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="4" errors="0" failures="0" skip="0"><testcase classname="testOpTime.OpTimeTestCase" name="testDiffTimeString" time="0.010"></testcase><testcase classname="testOpTime.OpTimeTestCase" name="testGetTime" time="0.000"></testcase><testcase classname="testOpTime.OpTimeTestCase" name="testTimeNumberAsString" time="0.000"></testcase><testcase classname="testOpTime.OpTimeTestCase" name="testTimeString" time="0.001"><system-out><![CDATA[17/07/27 : 14:12:05
+]]></system-out></testcase></testsuite>

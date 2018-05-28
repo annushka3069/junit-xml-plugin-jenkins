@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="90" errors="2" failures="2" skip="16"><testcase classname="testOpCommand.OpCommandTestCase" name="testWithEnv" time="0.012"><system-out><![CDATA[[15:35:12]    INFO: Running command 'cmd /C "echo %MY_ENV_VAR%"' in folder 'C:\Dev\OpToolbox\tests'.
+[15:35:12]    INFO: Command cmd /C "echo %MY_ENV_VAR%" completed with success.
+]]></system-out></testcase><testcase classname="testOpCommand.OpCommandTestCase" name="testWithFolder" time="0.008"><system-out><![CDATA[[15:35:12]    INFO: Running command 'cmd /C "cd"' in folder 'C:\Dev\OpToolbox\src'.
+[15:35:12]    INFO: Command cmd /C "cd" completed with success.
+]]></system-out></testcase><testcase classname="testOpCommand" name="testConfig" time="0.000"></testcase><testcase classname="testOpTelnet.OpTelnetTestCase" name="testUserPrompt" time="2.868"><system-out><![CDATA[[15:35:12]    INFO: Time to prepare connection (open socket, etc.): 0.000617751320904
+[15:35:12]    INFO: TelnetSession: Opening connection to server '192.168.2.120' with user 'root'.
+[15:35:12]    INFO: Time to get login prompt: 0.0167196119096
+[15:35:13]    INFO: Time to get password prompt: 0.0401570502696
+[15:35:15]    INFO: Time to set our user prompt: 2.60172105401
+echo $PS1
+#*#**#
+
+0.20154998891
+empty2
+0.00143041282678
+empty3
+0.00137459896572
+[15:35:15]    INFO: TelnetSession: closing connection to server '192.168.2.120' with user 'root'.
+]]></system-out></testcase><testcase classname="testOpTelnet" name="testConfig" time="0.000"></testcase><testcase classname="testCommonConfig.CommonConfigTestCase" name="testBasicConfig" time="0.003"></testcase><testcase classname="testCommonConfig.CommonConfigTestCase" name="testDefaultConfig" time="0.002"></testcase><testcase classname="testCommonConfig.CommonConfigTestCase" name="testEmptyConfig" time="0.001"></testcase><testcase classname="testCommonConfig" name="testConfig" time="0.001"></testcase><testcase classname="testGlobalConfig.GlobalConfigTestCase" name="testBasicConfig" time="0.004"></testcase><testcase classname="testGlobalConfig.GlobalConfigTestCase" name="testEmptyConfig" time="0.001"></testcase><testcase classname="testGlobalConfig" name="testConfig" time="0.001"></testcase><testcase classname="testSharedConfig.SharedConfigTestCase" name="testBasicConfig" time="0.004"></testcase><testcase classname="testSharedConfig.SharedConfigTestCase" name="testEmptyConfig" time="0.001"></testcase><testcase classname="testSharedConfig" name="testConfig" time="0.000"></testcase><testcase classname="testTargets.MultiOsTestCase" name="testPass" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.MultiOsTestCase" name="testFail" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsFtpTestCase" name="initializeExecution" time="0.000"><skipped type="unittest.case.SkipTest" message="Migration to Jenkins.  Waiting for suitable targets VMs."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: Migration to Jenkins.  Waiting for suitable targets VMs.
+]]></skipped></testcase><testcase classname="testTargets.TargetsFtpTestCase" name="testFtp" time="0.000"><skipped type="unittest.case.SkipTest" message="Migration to Jenkins.  Waiting for suitable targets VMs."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: Migration to Jenkins.  Waiting for suitable targets VMs.
+]]></skipped></testcase><testcase classname="testTargets.TargetsFtpTestCase" name="cleanupExecution" time="0.000"><skipped type="unittest.case.SkipTest" message="Migration to Jenkins.  Waiting for suitable targets VMs."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: Migration to Jenkins.  Waiting for suitable targets VMs.
+]]></skipped></testcase><testcase classname="testTargets.TargetsMountShareTestCase" name="testMountShare" time="0.000"><skipped type="unittest.case.SkipTest" message="Migration to Jenkins.  Waiting for suitable targets VMs."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: Migration to Jenkins.  Waiting for suitable targets VMs.
+]]></skipped></testcase><testcase classname="testTargets.TargetsMountShareTestCase" name="cleanupExecution" time="0.000"><skipped type="unittest.case.SkipTest" message="Migration to Jenkins.  Waiting for suitable targets VMs."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: Migration to Jenkins.  Waiting for suitable targets VMs.
+]]></skipped></testcase><testcase classname="testTargets.TargetsTelnetTestCase" name="testHost" time="0.004"><system-out><![CDATA[[15:35:15]    INFO: Checking host
+[15:35:15]    INFO: host online
+[15:35:15]    INFO: Hard reseting host : Begin
+[15:35:15]    INFO: Waiting for host to be up and running
+[15:35:15]    INFO: host is up and running
+]]></system-out></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testCheckTarget" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testHardReset" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testSoftReset" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="cleanupExecution" time="0.001"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testCheckTarget" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testHardReset" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testSoftReset" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="cleanupExecution" time="0.000"><skipped type="unittest.case.SkipTest" message="The whole class is being skipped (skip=True in class config).  No reason is provided."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: The whole class is being skipped (skip=True in class config).  No reason is provided.
+]]></skipped></testcase><testcase classname="testTargets.VirtualTargetMultiOsTestCase" name="testMultiOsGood" time="0.014"><system-out><![CDATA[[15:35:15]    INFO: Detecting os of virtual1
+[15:35:15]    INFO: virtual1 run under REDHAT32
+[15:35:15]    INFO: Checking virtual1
+[15:35:15]    INFO: virtual1 online
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetMultiOsTestCase" name="testMultiOsNoTelnet" time="0.056"><system-out><![CDATA[[15:35:15]    INFO: Detecting os of virtual1
+[15:35:15] WARNING: Not able to determine os of virtual1
+[15:35:15]    INFO: Checking virtual1
+[15:35:15]    INFO: Hard reseting virtual1 : Begin
+[15:35:15]    INFO: Waiting for virtual1 to be up and running
+[15:35:15]    INFO: virtual1 is up and running
+[15:35:15]    INFO: Detecting os of virtual1
+[15:35:15]    INFO: virtual1 run under REDHAT32
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetMultiOsTestCase" name="testMultiOsDead" time="0.023"><system-out><![CDATA[[15:35:15]    INFO: Detecting os of virtual1
+[15:35:15] WARNING: Not able to determine os of virtual1
+[15:35:15]    INFO: Checking virtual1
+[15:35:15]    INFO: Hard reseting virtual1 : Begin
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testTelnet" time="0.009"></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testCheckTarget" time="0.006"><system-out><![CDATA[[15:35:15]    INFO: Checking virtual1
+[15:35:15]    INFO: virtual1 online
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testSoftReset" time="0.010"><system-out><![CDATA[[15:35:15]    INFO: Soft reseting virtual1
+[15:35:16]    INFO: Waiting for virtual1 to be up and running
+[15:35:16]    INFO: virtual1 is up and running
+[15:35:16]    INFO: Soft reseting virtual1 : DONE
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testHardReset" time="0.011"><system-out><![CDATA[[15:35:16]    INFO: Hard reseting virtual1 : Begin
+[15:35:16]    INFO: Waiting for virtual1 to be up and running
+[15:35:16]    INFO: virtual1 is up and running
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testNoTelnetCheck" time="0.006"><system-out><![CDATA[[15:35:16]    INFO: Checking virtual1
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testNoTelnetReboot" time="0.012"><system-out><![CDATA[[15:35:16]    INFO: Hard reseting virtual1 : Begin
+[15:35:16]    INFO: Waiting for virtual1 to be up and running
+[15:35:16]    INFO: virtual1 is up and running
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testPowerDownCheck" time="0.008"><system-out><![CDATA[[15:35:16]    INFO: Checking virtual1
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testPowerDownHardReboot" time="0.010"><system-out><![CDATA[[15:35:16]    INFO: Hard reseting virtual1 : Begin
+[15:35:16]    INFO: Waiting for virtual1 to be up and running
+[15:35:16]    INFO: virtual1 is up and running
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testDeadCheck" time="0.009"><system-out><![CDATA[[15:35:16]    INFO: Checking virtual1
+]]></system-out></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testDeadNoTelnet" time="0.005"></testcase><testcase classname="testTargets.VirtualTargetTestCase" name="testDeadReboot" time="0.017"><system-out><![CDATA[[15:35:16]    INFO: Checking virtual1
+[15:35:16]    INFO: Hard reseting virtual1 : Begin
+]]></system-out></testcase><testcase classname="testTargets" name="testConfig" time="0.000"></testcase><testcase classname="testBuild.ExecutionTestCase" name="testBuildBasic" time="0.454"></testcase><testcase classname="testBuild" name="testConfig" time="0.000"></testcase><testcase classname="testOpWin32.OpWin32TestCase" name="testWindowsVersion" time="0.001"></testcase><testcase classname="testBaseConfig.TestCase" name="testBaseConfigValidator" time="0.001"></testcase><testcase classname="testBaseConfig.TestCase" name="testSectionValidator" time="0.001"></testcase><testcase classname="testBaseConfig.TestCase" name="testLoadConfig" time="0.002"><system-out><![CDATA[VALIDATING FIELD VALUE
+VALIDATING FIELD VALUE
+]]></system-out></testcase><testcase classname="testBaseConfig.TestCase" name="testAdvancedLoadConfig" time="0.001"><system-out><![CDATA[VALIDATING FIELD VALUE
+VALIDATING FIELD VALUE IN SUBSECTION
+VALIDATING FIELD USEREPLACEMENT
+<optoolbox.utils.BaseConfig.BaseConfig object at 0x0000000005165A58>
+]]></system-out></testcase><testcase classname="testBaseConfig.TestCase" name="testLoadConfigWithEnv" time="0.003"><system-out><![CDATA[VALIDATING FIELD VALUE
+]]></system-out></testcase><testcase classname="testBaseConfig" name="testConfig" time="0.000"></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.001"><error type="exceptions.ImportError" message="No module named testOpFiles"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\importer.py", line 79, in importFromDir
+    fh, filename, desc = find_module(part, path)
+ImportError: No module named testOpFiles
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.001"><error type="exceptions.ImportError" message="No module named testOpTime"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\importer.py", line 79, in importFromDir
+    fh, filename, desc = find_module(part, path)
+ImportError: No module named testOpTime
+]]></error></testcase><testcase classname="testOpMail.OpMailTestCase" name="testSendEmail" time="0.000"><skipped type="unittest.case.SkipTest" message="Deactivated until better implemented without dummy emails."><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 133, in run
+    self.runTest(result)
+  File "C:\Python27\lib\site-packages\nose-1.3.7-py2.7.egg\nose\case.py", line 151, in runTest
+    test(result)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 633, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 571, in run
+    if self.shouldSkip() == True:
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 406, in shouldSkip
+    self.skipTest(text)
+  File "C:\Python27\lib\unittest\case.py", line 406, in skipTest
+    raise SkipTest(reason)
+SkipTest: Deactivated until better implemented without dummy emails.
+]]></skipped></testcase><testcase classname="testOpMail" name="testConfig" time="0.000"></testcase><testcase classname="testOpUtil.OpUtilTestCase" name="testUniqueID" time="0.386"></testcase><testcase classname="testRemoteExecution.RemoteExecutionTestCase" name="testRemoteExecution" time="0.019"><failure type="exceptions.AssertionError" message="Incorrect return code"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "C:\Dev\OpToolbox\tests\utils\testRemoteExecution.py", line 32, in testRemoteExecution
+    self.assertTrue(rc == 0, 'Incorrect return code')
+  File "C:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: Incorrect return code
+]]></failure></testcase><testcase classname="testRemoteExecution" name="testConfig" time="0.000"></testcase><testcase classname="testSingleton.SingletonTestCase" name="testBaseObjects" time="0.000"><system-out><![CDATA[{'priority': 1, 'continueOnFail': True, 'skip': (False, ''), 'loop': None, 'name': 'testSingleton.SingletonTestCase.testBaseObjects'}
+In init of Base
+In init of Base
+]]></system-out></testcase><testcase classname="testSingleton.SingletonTestCase" name="testSingletonObjects" time="0.000"><system-out><![CDATA[{'priority': 2, 'continueOnFail': True, 'skip': (False, ''), 'loop': None, 'name': 'testSingleton.SingletonTestCase.testSingletonObjects'}
+In init of Base
+in init of Simple
+]]></system-out></testcase><testcase classname="testSingleton.SingletonTestCase" name="testDerivedObjects" time="0.001"><system-out><![CDATA[{'priority': 3, 'continueOnFail': True, 'skip': (False, ''), 'loop': None, 'name': 'testSingleton.SingletonTestCase.testDerivedObjects'}
+In init of Base
+in init of Simple
+In init of Derived
+]]></system-out></testcase><testcase classname="testSingleton.SingletonTestCase" name="testDerivedNotSingletonObjects" time="0.000"><system-out><![CDATA[{'priority': 4, 'continueOnFail': True, 'skip': (False, ''), 'loop': None, 'name': 'testSingleton.SingletonTestCase.testDerivedNotSingletonObjects'}
+In init of Base
+in init of Simple
+In init of DerivedNotSingleton
+]]></system-out></testcase><testcase classname="testSingleton.SingletonTestCase" name="testReset" time="0.000"><system-out><![CDATA[{'priority': 5, 'continueOnFail': True, 'skip': (False, ''), 'loop': None, 'name': 'testSingleton.SingletonTestCase.testReset'}
+In init of Base
+in init of SimpleWithReset
+in reset of SimpleWithReset
+]]></system-out></testcase><testcase classname="testSingleton" name="testConfig" time="0.000"></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="initialize" time="6.178"><system-out><![CDATA[COMMIT (GIT): [ALL] (comments = Redirected submodule)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs\submodule2): "git --no-pager commit -am "Redirected submodule" " 
+COMMIT (GIT):  done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs\submodule2): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos\subs\sub2.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs\submodule2): "git --no-pager push origin master" 
+COMMIT (GIT): [ALL] (comments = Redirected submodules)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs): "git --no-pager commit -am "Redirected submodules" " 
+COMMIT (GIT):  done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos\Repo_with_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs): "git --no-pager submodule sync --recursive" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs): "git --no-pager reset --hard HEAD@{1}" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos\Repo_with_subs): "git --no-pager submodule update --recursive" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testAdd" time="1.574"><system-out><![CDATA[[15:35:23]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:24]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+ADD (GIT): Adding all files in folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager add --all" 
+ADD (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager diff --cached" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCheckForModifications" time="1.767"><system-out><![CDATA[[15:35:25]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:26]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+CHECKFORMODIFICATIONS (GIT): Checking for changes in C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager commit --all --dry-run" 
+CHECKFORMODIFICATIONS (GIT): done
+CHECKFORMODIFICATIONS (GIT): Checking for changes in C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager commit --all --dry-run" 
+CHECKFORMODIFICATIONS (GIT): done
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCheckSubModules" time="1.674"><system-out><![CDATA[[15:35:27]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:28]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCheckout" time="11.639"><system-out><![CDATA[[15:35:28]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:29]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+CHECKOUT (GIT): WhoCares, BRANCHTAG = master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager clone C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git "C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp"" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager checkout master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager submodule sync" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager submodule update  --init --recursive --force" 
+CHECKOUT (GIT):WhoCares done
+CHECKOUT (GIT): WhoCares, BRANCHTAG = master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager checkout  master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager pull" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager submodule sync" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager submodule update  --init --recursive --force" 
+CHECKOUT (GIT):WhoCares done
+CHECKOUT (GIT): WhoCares, BRANCHTAG = otherbranch
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager checkout  otherbranch" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager pull" 
+CHECKOUT (GIT):WhoCares done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos_tmp): "git --no-pager log -n 1" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testChronologicalChangeLog" time="2.247"><system-out><![CDATA[[15:35:40]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:41]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged f98a6b1e3002002f9ac3142aa293de0d81e92fa9..HEAD" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager diff 6a8451840f3e6bbe615da904d457b91cdb0358fe^^ 6a8451840f3e6bbe615da904d457b91cdb0358fe C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager whatchanged 98fbeb7c9c79b30b40ce49a86809a8c9b2ad5c65..614295b364f1408c6fb93b0bee7110d60d84e4ae" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 614295b364f1408c6fb93b0bee7110d60d84e4ae" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager diff 614295b364f1408c6fb93b0bee7110d60d84e4ae^^ 614295b364f1408c6fb93b0bee7110d60d84e4ae C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager whatchanged .." 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager diff 25263290a021816d4bc6fd9ca0daf54c7ee5ece9^^ 25263290a021816d4bc6fd9ca0daf54c7ee5ece9 C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager whatchanged ..c80ae28097690349947a9c6f79eb7033789ee384" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager diff 25263290a021816d4bc6fd9ca0daf54c7ee5ece9^^ 25263290a021816d4bc6fd9ca0daf54c7ee5ece9 C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager whatchanged ..98fbeb7c9c79b30b40ce49a86809a8c9b2ad5c65" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged f98a6b1e3002002f9ac3142aa293de0d81e92fa9..fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged fb5bda33472d9e02a9e702e7792d9132fdc3ecb6..25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager diff 25263290a021816d4bc6fd9ca0daf54c7ee5ece9^^ 25263290a021816d4bc6fd9ca0daf54c7ee5ece9 C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager whatchanged ..c80ae28097690349947a9c6f79eb7033789ee384" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager diff 25263290a021816d4bc6fd9ca0daf54c7ee5ece9^^ 25263290a021816d4bc6fd9ca0daf54c7ee5ece9 C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager whatchanged ..98fbeb7c9c79b30b40ce49a86809a8c9b2ad5c65" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged 6a8451840f3e6bbe615da904d457b91cdb0358fe..6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testClean" time="1.803"><system-out><![CDATA[[15:35:42]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:43]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+CLEAN (GIT): path parameter: 
+CLEAN (GIT): excludeFolders parameter: ['C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs\\FakeFolder2']
+CLEAN (GIT): Folder (versionFolder) C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs
+CLEAN (GIT): self.subModules: ['C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs\\submodule1', 'C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs\\submodule2', 'C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs\\submodule2\\submodule']
+__CLEAN__ (GIT): Performing clean in: C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs
+__CLEAN__ (GIT): WARNING: "C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\FakeFolder2" will not be cleaned.
+__CLEAN__ (GIT): Calling command: clean -f -f -d -x -e FakeFolder2
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager clean -f -f -d -x -e FakeFolder2" 
+__CLEAN__ (GIT): Performing clean in: C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1
+__CLEAN__ (GIT): Calling command: clean -f -f -d -x
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager clean -f -f -d -x" 
+__CLEAN__ (GIT): Performing clean in: C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2
+__CLEAN__ (GIT): Calling command: clean -f -f -d -x
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager clean -f -f -d -x" 
+__CLEAN__ (GIT): Performing clean in: C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule
+__CLEAN__ (GIT): Calling command: clean -f -f -d -x
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager clean -f -f -d -x" 
+CLEAN (GIT): done
+CLEAN (GIT): path parameter: submodule10
+CLEAN (GIT): excludeFolders parameter: []
+CLEAN (GIT): Folder (path) submodule10
+__CLEAN__ (GIT): Performing clean in: C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule10
+__CLEAN__ (GIT): Calling command: clean -f -f -d -x
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule10): "git --no-pager clean -f -f -d -x" 
+CLEAN (GIT): done
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCommit" time="1.835"><system-out><![CDATA[[15:35:44]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:45]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+COMMIT (GIT): [ALL] (comments = Commiting all files)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager commit -am "Commiting all files" " 
+COMMIT (GIT):  done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager show HEAD" 
+COMMIT (GIT): File2.txt (comments = Commiting File2)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager commit -m "Commiting File2" File2.txt" 
+COMMIT (GIT): File2.txt done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager show HEAD" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCreateTag" time="1.738"><system-out><![CDATA[[15:35:46]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:47]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+TAG (GIT):  WhoCares with MY_FAKE_TAG
+TAG (GIT):  Tagging C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager tag -a -f -m "Release tag" MY_FAKE_TAG " 
+TAG (GIT): Tag WhoCares done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager tag --points-at HEAD" 
+TAG (GIT):  WhoCares with MY_FAKE_TAG2
+TAG (GIT):  Tagging C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager tag -a -f -m "Release tag" MY_FAKE_TAG2 f98a6b1e3002002f9ac3142aa293de0d81e92fa9" 
+TAG (GIT): Tag WhoCares done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager tag --points-at f98a6b1e3002002f9ac3142aa293de0d81e92fa9" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testDestroyWorkingCopy" time="1.778"><system-out><![CDATA[[15:35:48]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:49]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+DESTROY WORKING COPY (GIT): Folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+RESET (GIT): Folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager reset --hard " 
+RESET (GIT): done
+CLEAN (GIT): path parameter: 
+CLEAN (GIT): excludeFolders parameter: []
+CLEAN (GIT): Folder (versionFolder) C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+CLEAN (GIT): self.subModules: []
+__CLEAN__ (GIT): Performing clean in: C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+__CLEAN__ (GIT): Calling command: clean -f -f -d -x
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager clean -f -f -d -x" 
+CLEAN (GIT): done
+DESTROY WORKING COPY (GIT): done
+C:\Dev\OpToolbox\tests
+DESTROY WORKING COPY (GIT): Folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+DESTROY WORKING COPY (GIT): .git has been found and will not be deleted
+DESTROY WORKING COPY (GIT): Deleting file File1.txt
+DESTROY WORKING COPY (GIT): Deleting file File2.txt
+DESTROY WORKING COPY (GIT): Deleting file NewFile.txt
+DESTROY WORKING COPY (GIT): done
+DESTROY WORKING COPY (GIT): Folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+DESTROY WORKING COPY (GIT): Deleting .git
+DESTROY WORKING COPY (GIT): Deleting file File1.txt
+DESTROY WORKING COPY (GIT): Deleting file File2.txt
+DESTROY WORKING COPY (GIT): Deleting file NewFile.txt
+DESTROY WORKING COPY (GIT): done
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testGetSubModules" time="1.620"><system-out><![CDATA[[15:35:49]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:50]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testHasSubmodule" time="1.665"><system-out><![CDATA[[15:35:51]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:52]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testObtainCommitInfo" time="2.202"><system-out><![CDATA[[15:35:53]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:54]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at c80ae28097690349947a9c6f79eb7033789ee384" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 614295b364f1408c6fb93b0bee7110d60d84e4ae" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 0b0fb394d264357e46276b1015f0dab8efb1d69d" 
+OBTAIN LAST COMMIT INFO (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\.): "git --no-pager whatchanged f98a6b1e3002002f9ac3142aa293de0d81e92fa9..6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+OBTAIN COMMITS INFO (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at c80ae28097690349947a9c6f79eb7033789ee384" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 614295b364f1408c6fb93b0bee7110d60d84e4ae" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 0b0fb394d264357e46276b1015f0dab8efb1d69d" 
+OBTAIN LAST COMMIT INFO (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\.): "git --no-pager whatchanged 25263290a021816d4bc6fd9ca0daf54c7ee5ece9..6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+OBTAIN COMMITS INFO (GIT): done
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testObtainLatestCommitInfo" time="1.852"><system-out><![CDATA[[15:35:55]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:56]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at c80ae28097690349947a9c6f79eb7033789ee384" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 614295b364f1408c6fb93b0bee7110d60d84e4ae" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager whatchanged -m -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at 0b0fb394d264357e46276b1015f0dab8efb1d69d" 
+OBTAIN LAST COMMIT INFO (GIT): done
+[('.', {'comment': 'Mise \xc3\xa0 jour submodule2', 'files': [('modified', 'submodule2')], 'tags': [], 'author': 'michelo', 'date': '  Wed Oct 5 11:37:42 2016 -0400', 'id': '6a8451840f3e6bbe615da904d457b91cdb0358fe'}), ('submodule1', {'comment': 'FakeFile_sub1.txt in sub1', 'files': [('added', 'FakeFile_sub1.txt')], 'tags': [], 'author': 'michelo', 'date': '  Tue Oct 4 18:26:15 2016 -0400', 'id': 'c80ae28097690349947a9c6f79eb7033789ee384'}), ('submodule2', {'comment': 'Ajout du sous module sub3 dans sub2', 'files': [('added', '.gitmodules'), ('added', 'submodule')], 'tags': [], 'author': 'michelo', 'date': '  Tue Oct 4 18:32:10 2016 -0400', 'id': '614295b364f1408c6fb93b0bee7110d60d84e4ae'}), ('submodule2\\submodule', {'comment': 'FakeFile_sub3.txt in sub3', 'files': [('added', 'FakeFile_sub3.txt')], 'tags': [], 'author': 'michelo', 'date': '  Tue Oct 4 18:29:01 2016 -0400', 'id': '0b0fb394d264357e46276b1015f0dab8efb1d69d'})]
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testPush" time="1.828"><system-out><![CDATA[[15:35:57]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:58]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+COMMIT (GIT): [ALL] (comments = Commiting all files for pushing)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager commit -am "Commiting all files for pushing" " 
+COMMIT (GIT):  done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager show origin/master" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testReset" time="1.955"><system-out><![CDATA[[15:35:58]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:35:59]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+RESET (GIT): Folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager reset --hard " 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager reset --hard" 
+RESET (GIT): Reseted submodule C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager reset --hard" 
+RESET (GIT): Reseted submodule C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager reset --hard" 
+RESET (GIT): Reseted submodule C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule
+RESET (GIT): done
+RESET (GIT): Folder File1.txt
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager checkout -f File1.txt" 
+RESET (GIT): done
+RESET (GIT): Folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager reset --hard 25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager reset --hard" 
+RESET (GIT): Reseted submodule C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager reset --hard" 
+RESET (GIT): Reseted submodule C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager reset --hard" 
+RESET (GIT): Reseted submodule C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule
+RESET (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager log -n 1" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testResetBranchTo" time="1.744"><system-out><![CDATA[[15:36:00]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:36:01]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager reset --hard 6a8451840f3e6bbe615da904d457b91cdb0358fe" 
+RESET BRANCH (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager log -n 1" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager branch" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testRestoreWorkbranchToOrigin" time="1.634"><system-out><![CDATA[[15:36:02]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:36:03]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testRevert" time="1.701"><system-out><![CDATA[[15:36:04]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:36:05]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+REVERT (GIT): C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs\File1.txt
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager checkout -- File1.txt" 
+REVERT (GIT): C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs\File1.txt done
+REVERT (GIT): C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs\File2.txt
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager checkout -- File2.txt" 
+REVERT (GIT): C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs\File2.txt done
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testSubmitWorkBranch" time="14.390"><system-out><![CDATA[[15:36:05]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:36:06]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+SUBMIT WORK BRANCH (GIT): (branch = master, tag = )
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager stash save "Stash performed by CI for submitting TAG and build changes."" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager fetch origin" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager rebase master" 
+SUBMIT WORK BRANCH (GIT): git rebase master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager pull origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager stash pop" 
+SUBMIT WORK BRANCH (GIT): done
+TAG (GIT):  WhoCares with MY_FAKE_TAG3
+TAG (GIT):  Tagging C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager tag -a -f -m "Release tag" MY_FAKE_TAG3 f98a6b1e3002002f9ac3142aa293de0d81e92fa9" 
+TAG (GIT): Tag WhoCares done
+SUBMIT WORK BRANCH (GIT): (branch = master, tag = MY_FAKE_TAG3)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager stash save "Stash performed by CI for submitting TAG and build changes."" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager fetch origin" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager rebase master" 
+SUBMIT WORK BRANCH (GIT): git rebase master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager pull origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager show MY_FAKE_TAG3" 
+SUBMIT WORK BRANCH (GIT): Tag MY_FAKE_TAG3 was located in modules ['C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_no_subs']
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager push -f origin refs/tags/MY_FAKE_TAG3" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager stash pop" 
+SUBMIT WORK BRANCH (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git): "git --no-pager tag --points-at f98a6b1e3002002f9ac3142aa293de0d81e92fa9" 
+SUBMIT WORK BRANCH (GIT): (branch = master, tag = )
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager stash save "Stash performed by CI for submitting TAG and build changes."" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager fetch origin" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager rebase master" 
+SUBMIT WORK BRANCH (GIT): git rebase master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager pull origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager stash pop" 
+SUBMIT WORK BRANCH (GIT): done
+TAG (GIT):  WhoCares with MY_FAKE_TAG4
+TAG (GIT):  Tagging C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag -a -f -m "Release tag" MY_FAKE_TAG4 25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+TAG (GIT): Tag WhoCares done
+SUBMIT WORK BRANCH (GIT): (branch = master, tag = MY_FAKE_TAG4)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager stash save "Stash performed by CI for submitting TAG and build changes."" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager fetch origin" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager rebase master" 
+SUBMIT WORK BRANCH (GIT): git rebase master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager pull origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager show MY_FAKE_TAG4" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager show MY_FAKE_TAG4" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager show MY_FAKE_TAG4" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager show MY_FAKE_TAG4" 
+SUBMIT WORK BRANCH (GIT): Tag MY_FAKE_TAG4 was located in modules ['C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs']
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager push -f origin refs/tags/MY_FAKE_TAG4" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager stash pop" 
+SUBMIT WORK BRANCH (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git): "git --no-pager tag --points-at 25263290a021816d4bc6fd9ca0daf54c7ee5ece9" 
+TAG (GIT):  WhoCares with MY_FAKE_TAG5
+TAG (GIT):  Tagging C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag -a -f -m "Release tag" MY_FAKE_TAG5 fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+TAG (GIT):  Tagging C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager tag -a -f -m "Release tag" MY_FAKE_TAG5 98fbeb7c9c79b30b40ce49a86809a8c9b2ad5c65" 
+TAG (GIT): Tag WhoCares done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager tag --points-at 98fbeb7c9c79b30b40ce49a86809a8c9b2ad5c65" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager tag --points-at HEAD" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager tag --points-at HEAD" 
+SUBMIT WORK BRANCH (GIT): (branch = master, tag = MY_FAKE_TAG5)
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager stash save "Stash performed by CI for submitting TAG and build changes."" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager fetch origin" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager rebase master" 
+SUBMIT WORK BRANCH (GIT): git rebase master
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager pull origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager push origin master" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager show MY_FAKE_TAG5" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule1): "git --no-pager show MY_FAKE_TAG5" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager show MY_FAKE_TAG5" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2\submodule): "git --no-pager show MY_FAKE_TAG5" 
+SUBMIT WORK BRANCH (GIT): Tag MY_FAKE_TAG5 was located in modules ['C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs', 'C:\\Users\\NDEYE-~1.NDI\\AppData\\Local\\Temp\\OpToolboxGitTest\\WorkingRepos\\Repo_with_subs\\submodule2']
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager push -f origin refs/tags/MY_FAKE_TAG5" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs\submodule2): "git --no-pager push -f origin refs/tags/MY_FAKE_TAG5" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager stash pop" 
+SUBMIT WORK BRANCH (GIT): done
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git): "git --no-pager tag --points-at fb5bda33472d9e02a9e702e7792d9132fdc3ecb6" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\subs\sub2.git): "git --no-pager tag --points-at 98fbeb7c9c79b30b40ce49a86809a8c9b2ad5c65" 
+]]></system-out></testcase><testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testType" time="1.632"><system-out><![CDATA[[15:36:20]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceOriginRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos
+[15:36:21]    INFO: Done copying source folder C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\ReferenceWorkingRepos to destination C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_no_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_no_subs.git" 
+executeGitCommand  (C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\WorkingRepos\Repo_with_subs): "git --no-pager remote set-url origin C:\Users\NDEYE-~1.NDI\AppData\Local\Temp\OpToolboxGitTest\OriginRepos\Repo_with_subs.git" 
+]]></system-out></testcase><testcase classname="testGenerators.VivadoTestCase" name="testGeneratorInstance" time="0.000"><failure type="exceptions.AssertionError" message="Execution is not valid"><![CDATA[Traceback (most recent call last):
+  File "C:\Dev\OpToolbox\src\optoolbox\optest\testCase.py", line 593, in run
+    self.fail("Execution is not valid")
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Execution is not valid
+]]></failure></testcase></testsuite>
