@@ -1,0 +1,647 @@
+<testsuite errors="8" failures="19" name="nose2-junit" skipped="17" tests="151" time="71.160">
+  <testcase classname="testLoggedPopen.LoggedPopenTestCase" name="testNoPipe" time="0.069000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLoggedPopen.LoggedPopenTestCase" name="testNoPipeErrInOut" time="0.064000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLoggedPopen.LoggedPopenTestCase" name="testPipeErr" time="0.063000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLoggedPopen.LoggedPopenTestCase" name="testPipeOut" time="0.065000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLoggedPopen.LoggedPopenTestCase" name="testPipeOutErr" time="0.064000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLoggedPopen.LoggedPopenTestCase" name="testPipeOutErrInOut" time="0.064000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpCommand.OpCommandTestCase" name="testWithEnv" time="0.016000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpCommand.OpCommandTestCase" name="testWithFolder" time="0.012000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpTelnet.OpTelnetTestCase" name="testUserPrompt" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testCommonConfig.CommonConfigTestCase" name="testBasicConfig" time="0.001000">
+    <system-err />
+  </testcase>
+  <testcase classname="testCommonConfig.CommonConfigTestCase" name="testDefaultConfig" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testCommonConfig.CommonConfigTestCase" name="testEmptyConfig" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testGlobalConfig.GlobalConfigTestCase" name="testBasicConfig" time="0.002000">
+    <system-err />
+  </testcase>
+  <testcase classname="testGlobalConfig.GlobalConfigTestCase" name="testEmptyConfig" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSharedConfig.SharedConfigTestCase" name="testBasicConfig" time="0.000000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testSharedConfig.SharedConfigTestCase" name="testEmptyConfig" time="0.000000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.MultiOsTestCase" name="testPass" time="0.000000">
+    <skipped message="The whole class is being skipped (skip=True in class config).  No reason is provided." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.MultiOsTestCase" name="testFail" time="0.000000">
+    <skipped message="The whole class is being skipped (skip=True in class config).  No reason is provided." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsFtpTestCase" name="initializeExecution" time="0.001000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsFtpTestCase" name="testFtp" time="0.000000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsFtpTestCase" name="cleanupExecution" time="0.000000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsMountShareTestCase" name="testMountShare" time="0.000000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsMountShareTestCase" name="cleanupExecution" time="0.000000">
+    <skipped message="Migration to Jenkins.  Waiting for suitable targets VMs." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsTelnetTestCase" name="testHost" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testCheckTarget" time="0.000000">
+    <skipped message="The whole class is being skipped (skip=True in class config).  No reason is provided." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testHardReset" time="0.000000">
+    <skipped message="The whole class is being skipped (skip=True in class config).  No reason is provided." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="testSoftReset" time="0.000000">
+    <skipped message="The whole class is being skipped (skip=True in class config).  No reason is provided." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.TargetsVerificationAndResetTestCase" name="cleanupExecution" time="0.000000">
+    <skipped message="The whole class is being skipped (skip=True in class config).  No reason is provided." />
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetMultiOsTestCase" name="testMultiOsGood" time="0.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetMultiOsTestCase" name="testMultiOsNoTelnet" time="0.028000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetMultiOsTestCase" name="testMultiOsDead" time="0.025000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testTelnet" time="0.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testCheckTarget" time="0.005000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testSoftReset" time="0.014000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testHardReset" time="0.011000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testNoTelnetCheck" time="0.008000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testNoTelnetReboot" time="0.011000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testPowerDownCheck" time="0.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testPowerDownHardReboot" time="0.007000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testDeadCheck" time="0.010000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testDeadNoTelnet" time="0.004000">
+    <system-err />
+  </testcase>
+  <testcase classname="testTargets.VirtualTargetTestCase" name="testDeadReboot" time="0.014000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="initialize" time="6.599000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testAdd" time="1.350000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCheckForModifications" time="1.455000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCheckout" time="11.234000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCheckSubModules" time="1.289000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testChronologicalChangeLog" time="1.919000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testClean" time="1.446000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCommit" time="1.454000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testCreateTag" time="1.444000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testDestroyWorkingCopy" time="1.387000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testGetSubModules" time="1.272000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testHasSubmodule" time="1.292000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testObtainCommitInfo" time="1.896000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testObtainLatestCommitInfo" time="1.500000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testPush" time="1.491000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testReset" time="1.682000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testResetBranchTo" time="1.408000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testRestoreWorkbranchToOrigin" time="1.292000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testRevert" time="1.370000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testSubmitWorkBranch" time="13.776000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSourceControlGIT.SourceControlGITTestCase" name="testType" time="1.296000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLogs.LogsTestCase" name="testOpTestStandAlone" time="0.257000">
+    <system-err />
+  </testcase>
+  <testcase classname="testLogs.LogsTestCase" name="testStandAloneMethod" time="0.228000">
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlab.MatlabTestCase" name="testVersionInfo" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlab.MatlabTestCase" name="testAppHandleNone" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlab.MatlabTestCase" name="testExecute" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlab.MatlabTestCase" name="testGetData" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlab.MatlabTestCase" name="testConnect" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlabHandler.MatlabHandlerTestCase" name="testMatlabDetection" time="0.001000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\matlab\testMatlabHandler.py", line 25, in testMatlabDetection
+    self.failUnless( os.path.isfile(exepath), 'Cannot find file "%s"' % exepath )
+AssertionError: Cannot find file "C:\Program Files (x86)\MATLAB\R2015aSP1\bin\win32\matlab.exe"
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testMatlabHandler.MatlabHandlerTestCase" name="testFindVersion" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSimulink.SimulinkTestCase" name="testGetMDLList" time="0.002000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSimulink.SimulinkTestCase" name="testGetLibrariesAndModelsFromMDLList" time="0.002000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSimulink.SimulinkTestCase" name="testGetSimulinkMDLType" time="0.001000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSimulink.SimulinkTestCase" name="testGetSimulinkMDLVersion" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSimulink.SimulinkTestCase" name="testGetAllBlocksInMDL" time="0.175000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSimulink.SimulinkTestCase" name="testGetBlocksWithMasksInLib" time="0.143000">
+    <system-err />
+  </testcase>
+  <testcase classname="testBuild.ExecutionTestCase" name="testBuildBasic" time="0.337000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\opbuild\testBuild.py", line 19, in testBuildBasic
+    self.genericBuild(childModule,reference,'Build not done correctly.', versionLabel='v1')
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\opbuild\utils\ProcessLauncherTestCase.py", line 70, in genericBuild
+    self.assertEqual(result, False, 'Invalid subprocess result %s != False' % str(result))
+AssertionError: Invalid subprocess result None != False
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testContinueOnFailBehavior" time="0.303000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testInitializeCleanup" time="0.252000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testPriority" time="0.246000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testSameConfiguration" time="0.277000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\optest\testExecution.py", line 62, in testSameConfiguration
+    self.genericTest(childModule,reference,'Tests not executed in right order.')
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\utils\ProcessLauncherTestCase.py", line 136, in genericTest
+    self.assertEqual(result, False, 'Invalid subprocess result %s != False' % str(result))
+AssertionError: Invalid subprocess result 1 != False
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testTestcaseFileReleaseBranch" time="0.256000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testTestcaseFileSkipped" time="1.316000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testTestCasesPriority" time="0.249000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testTwoTargetsInExecutionOrder" time="0.328000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\optest\testExecution.py", line 42, in testTwoTargetsInExecutionOrder
+    self.genericTest(childModule,reference,'Tests not executed in right order.')
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\utils\ProcessLauncherTestCase.py", line 136, in genericTest
+    self.assertEqual(result, False, 'Invalid subprocess result %s != False' % str(result))
+AssertionError: Invalid subprocess result 1 != False
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testExecution.ExecutionTestCase" name="testTwoTargetsInTargetOrder" time="0.302000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\optest\testExecution.py", line 54, in testTwoTargetsInTargetOrder
+    self.genericTest(childModule,reference,'Tests not executed in right order.')
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\utils\ProcessLauncherTestCase.py", line 136, in genericTest
+    self.assertEqual(result, False, 'Invalid subprocess result %s != False' % str(result))
+AssertionError: Invalid subprocess result 1 != False
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testExpect.ExpectTestCase" name="testExpectError" time="0.252000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExpect.ExpectTestCase" name="testExpectError2" time="0.248000">
+    <system-err />
+  </testcase>
+  <testcase classname="testExpect.ExpectTestCase" name="testExpectOk" time="0.239000">
+    <system-err />
+  </testcase>
+  <testcase classname="testInitCleanup.InitCleanupTestCase" name="testCleanup" time="0.242000">
+    <system-err />
+  </testcase>
+  <testcase classname="testInitCleanup.InitCleanupTestCase" name="testCleanupExecution" time="0.241000">
+    <system-err />
+  </testcase>
+  <testcase classname="testInitCleanup.InitCleanupTestCase" name="testInitialize" time="0.254000">
+    <system-err />
+  </testcase>
+  <testcase classname="testInitCleanup.InitCleanupTestCase" name="testInitializeExecution" time="0.244000">
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.MatlabPrerequisitesTestCase" name="testFailSecondMatlab" time="0.257000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\optest\testPrerequisites.py", line 118, in testFailSecondMatlab
+    self.failUnlessEqual(data, ['testDummy_monExecution_monMatlab1'], "The passing subtest was not recorded and/or the failing test was recorded.")
+AssertionError: The passing subtest was not recorded and/or the failing test was recorded.
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="initialize" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="testSingleReqSingleExec" time="0.274000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\optest\testPrerequisites.py", line 52, in testSingleReqSingleExec
+    self.assertTrue(result==0, 'Failed to obtain target requirements')
+AssertionError: Failed to obtain target requirements
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="testMultipleReqSingleExec" time="0.001000">
+    <skipped message="Disabled until we get a new RH64 target to run tests with Jenkins, or maybe a CentOS target instead." />
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="testMultipleReqMultipleExec" time="0.000000">
+    <skipped message="Not implemented yet." />
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="testSharedTargetPrerequisite" time="0.000000">
+    <skipped message="DISABLED WHILE DEBUGGING PROBLEMS WITH SHARED_CONFIG.INI." />
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="testSharedTargetFailedReservationPrerequisite" time="0.268000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\optest\testPrerequisites.py", line 101, in testSharedTargetFailedReservationPrerequisite
+    self.assertTrue(str(exceptions).find("['REDHAT32', 'TARGET', 'ML605']")&gt;-1, 'Should have obtained an exception about no targets matching the prerequisites')
+AssertionError: Should have obtained an exception about no targets matching the prerequisites
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testPrerequisites.TargetPrerequisitesTestCase" name="cleanup" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="nose2.loader.ModuleImportFailure" name="testRtlabBaseTestCase" time="0.000000">
+    <error message="test failure">ImportError: Failed to import test module: testRtlabBaseTestCase
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\nose2\plugins\loader\discovery.py", line 200, in _find_tests_in_file
+    module = util.module_from_name(module_name)
+  File "C:\Python27\lib\site-packages\nose2\util.py", line 90, in module_from_name
+    __import__(name)
+  File "C:\Dev\Nose2\OpToolbox\tests\rtlabtools\testRtlabBaseTestCase.py", line 11, in &lt;module&gt;
+    from optoolbox import rtlabtools
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\rtlabtools\__init__.py", line 40, in &lt;module&gt;
+    import optestSetupConfig
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\rtlabtools\optestSetupConfig.py", line 7, in &lt;module&gt;
+    import RtlabInfo as rInfo
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\rtlabtools\RtlabInfo.py", line 8, in &lt;module&gt;
+    import RtlabAttributes as att
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\rtlabtools\RtlabAttributes.py", line 7, in &lt;module&gt;
+    import RtlabApi as r
+  File "C:\OPAL-RT\RT-LAB\v11.1.4.59\common\python\RtlabApi.py", line 1, in &lt;module&gt;
+    import OpalApiPy
+  File "C:\OPAL-RT\RT-LAB\v11.1.4.59\common\python\OpalApiPy.py", line 19, in &lt;module&gt;
+    raise Exception('RtlabApi is not supported on Python %d.%d.' % (__v1, __v2))
+Exception: RtlabApi is not supported on Python 2.7.
+
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGenerators.VivadoTestCase" name="testGeneratorInstance" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testGenerators.VivadoTestCase" name="testWongInputs" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testGenerators.VivadoTestCase" name="testGeneratorInstance" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testGenerators.VivadoTestCase" name="testWongInputs" time="0.000000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\optest\TestCase.py", line 597, in run
+    self.fail("Execution is not valid")
+AssertionError: Execution is not valid
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testAppendAndDeleteCells" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testFilledUpFile" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testGetDocumentName" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testRead" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testReadMultiCell" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testWrite" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testGoogleSheets.GoogleSheetTestCase" name="testWriteMultiCell" time="0.001000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\spreadsheets\testGoogleSheets.py", line 23, in setUp
+    self.sheet.Open()
+  File "C:\Dev\Nose2\OpToolbox\src\optoolbox\spreadsheets\googlesheets.py", line 75, in Open
+    import httplib2
+ImportError: No module named httplib2
+</error>
+    <system-err />
+  </testcase>
+  <testcase classname="testOpWin32.OpWin32TestCase" name="testWindowsVersion" time="0.001000">
+    <system-err />
+  </testcase>
+  <testcase classname="testMinimal.MinimalTestCase" name="testPathValidation" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testBaseConfig.TestCase" name="testBaseConfigValidator" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testBaseConfig.TestCase" name="testSectionValidator" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testBaseConfig.TestCase" name="testLoadConfig" time="0.001000">
+    <system-err />
+  </testcase>
+  <testcase classname="testBaseConfig.TestCase" name="testAdvancedLoadConfig" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testBaseConfig.TestCase" name="testLoadConfigWithEnv" time="0.001000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCleanFolder" time="0.008000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCleanNonExistingFolder" time="0.004000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFile" time="0.007000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFileDirInput" time="0.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFileNotPreserve" time="0.007000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFilePreserve" time="0.010000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFileSrcIsDest" time="0.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFileSrcIsDestNotPreserve" time="0.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testCopyFileSrcIsDestPreserve" time="0.007000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testDeleteItem" time="0.005000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testDeleteNonExistingItem" time="0.005000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testExcludeFromSearch" time="0.009000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testSearchDir" time="0.019000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testSearchFilesCurrentDir" time="0.007000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testSearchFilesNotFound" time="0.010000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testSearchFilesSubDir" time="0.007000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpFiles.OpFilesTestCase" name="testSearchFilesTimeout" time="5.006000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpMail.OpMailTestCase" name="testSendEmail" time="0.000000">
+    <skipped message="Deactivated until better implemented without dummy emails." />
+    <system-err />
+  </testcase>
+  <testcase classname="testOpTime.OpTimeTestCase" name="testDiffTimeString" time="0.001000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpTime.OpTimeTestCase" name="testGetTime" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpTime.OpTimeTestCase" name="testTimeNumberAsString" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpTime.OpTimeTestCase" name="testTimeString" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testOpUtil.OpUtilTestCase" name="testUniqueID" time="0.365000">
+    <system-err />
+  </testcase>
+  <testcase classname="testRemoteExecution.RemoteExecutionTestCase" name="testRemoteExecution" time="0.019000">
+    <failure message="test failure">Traceback (most recent call last):
+  File "C:\Dev\Nose2\OpToolbox\tests\utils\testRemoteExecution.py", line 34, in testRemoteExecution
+    self.assertTrue(rc == 0, 'Incorrect return code')
+AssertionError: Incorrect return code
+</failure>
+    <system-err />
+  </testcase>
+  <testcase classname="testSingleton.SingletonTestCase" name="testBaseObjects" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSingleton.SingletonTestCase" name="testSingletonObjects" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSingleton.SingletonTestCase" name="testDerivedObjects" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSingleton.SingletonTestCase" name="testDerivedNotSingletonObjects" time="0.000000">
+    <system-err />
+  </testcase>
+  <testcase classname="testSingleton.SingletonTestCase" name="testReset" time="0.001000">
+    <system-err />
+  </testcase>
+</testsuite>
